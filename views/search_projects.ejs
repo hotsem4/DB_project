@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../css/find_style.css" type="text/css">   
+    <meta charset="utf-8">
+    <title>find_projects</title>
+</head>
+
+<body>
+    <div id="__next">
+        <div>
+            <div style="min-height: calc(100vh - 215px); padding-bottom: 40px;">
+                <nav class="z-50 hidden h-20 select-none items-center border-b px-6 text-base md:flex">
+                    <a class="flex items-center space-x-2 hover:opacity-70"
+                    href="/<%= id %>">   
+                        <div class="h-full font-logo text-2xl font-bold text-swygBlue-500">BuildRunMate</div>
+                    </a>
+                    <ul class="ml-4 flex h-full items-center font-medium">
+                        <li class="group flex h-full items-center">
+                            <a target=""
+                            class="mt-1 py-2 px-6 group-hover:text-gray-900"
+                            href="/<%= id %>/enroll">프로젝트 등록</a>
+                        </li>
+                        <li class="group flex h-full items-center">
+                            <a target="" class="mt-1 py-2 px-6 group-hover:text-gray-900" href="find_projects.html">프로젝트 찾기</a>
+                        </li>
+                    </ul>
+                    <!--검색창-->
+                    <form class="search">
+                        <input id="searchText" type="text" placeholder="검색어 입력" required>
+                        <button id="searchBtn">
+                            <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+                        </button>
+                    </form>
+
+                    <div class="mt-1 flex flex-1 items-center justify-end space-x-6">
+                        <h1>Welcome, <%= id %></h1>
+                    </div>
+                </nav>
+                    <div class="min-h-screen space-y-10 p-6 py-24 md:py-6">
+                        
+                        <a class="group relative mx-auto flex w-full max-w-6xl transform select-none items-start justify-between rounded-lg bg-white p-5 shadow-projectContainer transition duration-300 ease-out hover:bg-gray-300 hover:bg-opacity-20" href="./54">
+                            <div>
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="inline rounded-sm bg-gray-200 py-1 px-2 font-bold text-gray-700">지원 기간 </div>
+                                        <div class="inline-flex space-x-4 sm:space-x-8">
+                                            <span class="text-base text-gray-500">✔ n개월 전 등록</span>
+                                        </div>
+                                    </div>
+                                    <div class="break-words pt-1 text-lg font-bold">[프론트엔드] 더 쉽고 빠른 지식/정보 콘텐츠 요약 플랫폼</div>
+                                </div>
+                                <div class="mt-4 mb-5 text-sm leading-6 line-clamp-3">"더 쉽고 빠른 지식/정보 콘텐츠 요약 플랫폼
+                                    사이드프로젝트부터 함께 키워가실 분을 찾습니다!
+                                    
+                                    
+                                    "반응이 좋습니다!"
+                                    크리에이터와 엔드유저, 그외에 관련이 있는 다양한 Stakeholder들에게 보여드렸고
+                                    실제로 관심을 가지신 분들이 많아요! (두근두근)
+                                    아이디어를 프로토타입으로 간단한 MVP테스트와 Usability, Fake door test를 진행해봤고 결과를 공유드릴 수 있습니다.
+                                    
+                                    현재 저희는 
+                                    디자이너 1, 프론트엔드개발자 1, 서비스기획/PM1, 백엔드1 총 4명(+)이 있고 계속 충원하고 있습니다.
+                                    
+                                    
+                                    [Vision]
+                                    삶을 풍요롭게 하는 지식과 정보를 더욱 쉽고 간편하게
+                                    
+                                    [Mission]
+                                    '경제, 자산관리, 자기개발, 인문학, 과학, 투자, 기술, 생활' 등의 지식과 정보를 얻는 과정을 개선.
+                                    콘텐츠의 핵심 내용을 빠르고 이해하기 쉽게 나눌 수 있도록 크리에이터와 엔드유저에게 서비스를 제공
+                                    
+                                    
+                                    [Why]
+                                    지식/정보 콘텐츠들이 지루하고, 길고 본론을 빙빙 돌려 말해서 답답하다. (예: 경제/투자/이슈 등등)
+                                    설명이 부족하거나 내용이 너무 어렵거나 맥락 공유가 적다..
+                                    
+                                    [What]
+                                    더욱 쉽고 빠르게 각 분야의 기초를 익힐 수 있는 정보와 지식을 나누는 교육 콘텐츠 플랫폼을 제공하려 합니다.
+                                    - 2030직장인들은
+                                        출퇴근하는 시간을 활용해 정제되고 이해하기 쉬운 콘텐츠로 기본적인 개념을 익힐 수 있습니다."</div>
+                                <div class="mb-5 flex flex-col text-base text-gray-500 sm:hidden">
+                                    <div>- 예상 기간 : </div>
+                                    <div class="text-gray-500">- 지원 마감 : </div>
+                                    <span class="mt-3 flex items-center space-x-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="18" height="18" class="pb-px">
+                                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                                        </svg>
+                                        <span>
+                                            <span class="font-bold">2 명</span> 지원
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="mb-5 hidden space-x-3 text-base text-gray-500 sm:flex">
+                                    <div class="break-all line-clamp-1">예상 기간 : 2023-06-11  ~  2023-07-02</div>
+                                    <div>|</div>
+                                    <div class="shrink-0 text-gray-500">지원 마감 : 2023-06-13</div>                                        
+                                    <div>|</div>
+                                    <span class="flex shrink-0 items-center space-x-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="18" height="18" class="pb-px">
+                                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                                        </svg>
+                                        <span>
+                                            <span class="font-bold">2 명</span> 지원
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="group relative mx-auto flex w-full max-w-6xl transform select-none items-start justify-between rounded-lg bg-white p-5 shadow-projectContainer transition duration-300 ease-out hover:bg-gray-300 hover:bg-opacity-20" href="./55">
+                            <div>
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="inline rounded-sm bg-gray-200 py-1 px-2 font-bold text-gray-700">지원 기간 </div>
+                                        <div class="inline-flex space-x-4 sm:space-x-8">
+                                            <span class="text-base text-gray-500">✔ n개월 전 등록</span>
+                                        </div>
+                                    </div>
+                                    <div class="break-words pt-1 text-lg font-bold">[프론트엔드]착한 배달 플랫폼. 소비자가 배달 업체를 직접 선택. 소상 공인과의 상생</div>
+                                </div>
+                                <div class="mt-4 mb-5 text-sm leading-6 line-clamp-3">"안녕하십니까
+
+                                    저는 개발에 쥐뿔도 아는 게 없는 하수 입니다.
+                                    
+                                    할 줄 아는 건 생각하는 거 밖에 없습니다.
+                                    
+                                    제가 가진 생각 중 하나인 배달 플랫폼 개발에 함께 하실 분, 투자하실 분을 찾습니다.
+                                    
+                                    제가 생각해왔던 배달 플랫폼은 소비자와 소상 공인 사이의 중개자의 역할만 하면
+                                    
+                                    된다는 것입니다.
+                                    
+                                    배달의 민족 등 배달 플랫폼이 생겼을 때 배달 플랫폼의 행태를 매우 비판적으로 생각 했고
+                                    
+                                    사용하지 않았습니다.
+                                    
+                                    하지만 소비자가 왜 배달 플랫폼을 사용하는 지, 소상 공인들도 왜 배달 플랫폼을 사용할 수 밖에 없는
+                                    
+                                    지 생각을 많이 해왔습니다.
+                                    
+                                    소비자의 선택의 폭을 넓히고, 프로모션을 통해 저렴한 가격으로 서비스를 제공받을 수 있고
+                                    
+                                    소상공인은 매장 홍보에 플랫폼을 이용, 전화 주문의 불편함 해소
+                                    
+                                    플랫폼은 수수료로 수익창출
+                                    
+                                    하지만 지금에 와서 배달 비가 사회적 이슈가 되었습니다.
+                                    
+                                    플랫폼 사의 과도한 수수료 정책은 결국 소상 공인과 소비자에 부담을 안겨주는 결과를 야기하였습니다."</div>
+                                <div class="mb-5 flex flex-col text-base text-gray-500 sm:hidden">
+                                    <div>- 예상 기간 : </div>
+                                    <div class="text-gray-500">- 지원 마감 : </div>
+                                    <span class="mt-3 flex items-center space-x-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="18" height="18" class="pb-px">
+                                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                                        </svg>
+                                        <span>
+                                            <span class="font-bold">명</span> 지원
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="mb-5 hidden space-x-3 text-base text-gray-500 sm:flex">
+                                    <div class="break-all line-clamp-1">예상 기간 : 2023-06-14  ~  2024-08-14</div>
+                                    <div>|</div>
+                                    <div class="shrink-0 text-gray-500">지원 마감 : 2023-06-21</div>                                        
+                                    <div>|</div>
+                                    <span class="flex shrink-0 items-center space-x-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="18" height="18" class="pb-px">
+                                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                                        </svg>
+                                        <span>
+                                            <span class="font-bold">2 명</span> 지원
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                       
+                    </div>
+                                
+    <script src="/js/search_project.js"></script>
+</body>
+
+
