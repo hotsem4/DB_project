@@ -1,6 +1,7 @@
 'use strict';
 
 const UserStorage = require('./UserStorage');
+const bcrypt = require('bcrypt');
 
 class User {
   constructor(body) {
@@ -9,21 +10,27 @@ class User {
 
   async login() {
     const client = this.body;
-    console.log(client);
     try {
       const { id, password, userId } = await UserStorage.getUserInfo(client.id);
-      console.log('***************');
-      console.log(await UserStorage.getUserInfo(client.id));
-      console.log(id, password);
-      console.log(client.id, client.psword);
-      console.log('***************');
-      if (id) {
-        if (id === client.id && password === client.psword) {
+
+      if (id && id === client.id) {
+        const isMatch = await new Promise((resolve, reject) => {
+          bcrypt.compare(client.psword, password, (err, result) => {
+            if (err) {
+              reject(err);
+            } else {
+              resolve(result);
+            }
+          });
+        });
+
+        if (isMatch) {
           return { success: true };
+        } else {
+          return { success: false, msg: '비밀번호가 일치하지 않습니다.' };
         }
-        return { success: false, msg: '비밀번호가 틀렸습니다.' };
       }
-      return { success: false, msg: '존재하지 않는 아이디입니다.' };
+      return { success: false, msg: 'This ID does not exist.' };
     } catch (err) {
       return { success: false, msg: err };
     }

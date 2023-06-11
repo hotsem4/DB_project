@@ -32,6 +32,7 @@ export const process = {
   register: async (req, res) => {
     const user = new User(req.body);
     const response = await user.register();
+    console.log(response);
     return res.json(response);
   },
 };

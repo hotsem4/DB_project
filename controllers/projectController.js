@@ -219,11 +219,6 @@ export const projectSearchProcess = {
       result.project_end = result.project_end.toISOString().split('T')[0];
     });
     response.projectData = projectData;
-
-    console.log('*****************');
-    console.log(response);
-    console.log('*****************');
-
     return res.json(response);
   },
 };
