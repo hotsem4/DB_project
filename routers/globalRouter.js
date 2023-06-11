@@ -37,9 +37,9 @@ globalRouter.post('/:id/search_projects', handleProjectSearch);
 globalRouter.post('/:id/:project_id', projectSupportProcess.supportProject);
 globalRouter.post('/:id/:project_id/delete', handleProjectDelete);
 
-// globalRouter.post(
-//   '/:id/:project_id/update',
-//   projectUpdateProcess.updateProject
-// );
+globalRouter.post(
+  '/:id/:project_id/update',
+  projectUpdateProcess.updateProject
+);
 
 export default globalRouter;

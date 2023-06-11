@@ -19,7 +19,6 @@ const inputProjectBtn = document.getElementById('projectEnrollBtn'),
 
 projectEnrollBtn.addEventListener('click', (event) => {
   event.preventDefault();
-  console.log(writer_id);
   if (projectName.value === '') {
     alert('프로젝트 제목을 입력해 주세요.');
     return;
@@ -68,7 +67,6 @@ function insert_project_db() {
     dev_stat: dev_stat_value,
     writer_id: writer_id,
   };
-  console.log(req);
 
   if (majorLang2 === '') {
     req.majorLang2 = null;
