@@ -80,7 +80,7 @@ function insert_project_db() {
 
   const userId = localStorage.getItem('userId');
 
-  fetch('./enroll', {
+  fetch(`../${id}/enroll`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

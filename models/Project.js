@@ -7,6 +7,7 @@ class Project {
 
   async input_projectDate() {
     const info = this.body;
+    console.log(info);
     try {
       const response = await ProjectStorage.projectSave(info);
       return response;

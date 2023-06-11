@@ -32,11 +32,11 @@ globalRouter.get('/:id/:project_id/update', hanleUpdateProjectInfo);
 
 globalRouter.post('/login', process.login);
 globalRouter.post('/register', process.register);
+globalRouter.post('/:id/enroll', projectInputProcess.inputProject);
 globalRouter.post('/:id/search_projects', handleProjectSearch);
 globalRouter.post('/:id/:project_id', projectSupportProcess.supportProject);
 globalRouter.post('/:id/:project_id/delete', handleProjectDelete);
 
-globalRouter.post('/:id/enroll', projectInputProcess.inputProject);
 // globalRouter.post(
 //   '/:id/:project_id/update',
 //   projectUpdateProcess.updateProject

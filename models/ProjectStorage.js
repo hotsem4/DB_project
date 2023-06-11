@@ -4,6 +4,7 @@ const db = require('../config/db');
 class ProjectStorage {
   static async projectSave(projectInfo) {
     return new Promise((resolve, reject) => {
+      console.log(projectInfo);
       const query =
         'INSERT INTO Project(project_name, project_info, recruitment_start, recruitment_end, project_start, project_end, recruitment_number, dev_env, major_lang1, major_lang2, major_lang3, recru_stat, dev_stat, writer_id) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?);';
       db.query(
@@ -25,6 +26,9 @@ class ProjectStorage {
           projectInfo.writer_id,
         ],
         (err, results) => {
+          console.log('****************');
+          console.log(results);
+          console.log('****************');
           if (err) {
             if (err.code !== 'ER_DBERROR') {
               throw err;

@@ -2,7 +2,7 @@ import db from '../config/db';
 const Project = require('../models/Project');
 
 export const handleProject = (req, res) => {
-  console.log(req);
+  console.log('handleProject');
   res.render('input_project', { id: req.params.id });
 };
 
@@ -178,6 +178,8 @@ WHERE p.project_id = ?;
 
 export const projectInputProcess = {
   inputProject: async (req, res) => {
+    console.log('projectController req: ');
+    console.log(req);
     const project = new Project(req.body);
     const response = await project.input_projectDate();
     return res.json(response);
